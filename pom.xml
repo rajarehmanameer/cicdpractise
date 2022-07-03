@@ -40,7 +40,7 @@
 				<applicationName>cicdpractise</applicationName>
 				<workerType>Micro</workerType>
 				<workers>1</workers>
-				<objectStoreV2>true</objectStoreV2>
+				<objectStoreV2>false</objectStoreV2>
 				<properties>
 				   <key>value</key>
 				</properties>
