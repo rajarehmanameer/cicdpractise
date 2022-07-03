@@ -34,7 +34,7 @@
 				<uri>https://anypoint.mulesoft.com</uri>
 				<muleVersion>4.3.0</muleVersion>
 				<username>mtcaguide</username>
-				<password>asdf@1234</password>
+				<password>Asdf@1234</password>
 				<environment>Sandbox</environment>
 				<applicationName>cicdpractise</applicationName>
 				<workerType>Micro</workerType>
