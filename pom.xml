@@ -31,7 +31,22 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
+				<cloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com</uri>
+				<muleVersion>4.3.0</muleVersion>
+				<username>mtcaguide</username>
+				<password>asdf@1234</password>
+				<environment>Sandbox</environment>
+				<applicationName>cicdpractise</applicationName>
+				<workerType>Micro</workerType>
+				<workers>1</workers>
+				<objectStoreV2>true</objectStoreV2>
+				<properties>
+				   <key>value</key>
+				</properties>
+				</cloudHubDeployment>
+				<classifier>mule-application</classifier>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -67,13 +82,8 @@
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>mulesoft-releases</id>
-            <name>mulesoft release repository</name>
-            <layout>default</layout>
-            <url>https://repository.mulesoft.org/releases/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>mule-public</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
         </pluginRepository>
     </pluginRepositories>
 
